@@ -4,18 +4,19 @@ import { ref } from "vue";
 
 export const usePythonDepsStore = defineStore("pythonDepsStore", () => {
   // State
-  const startPackages = ref(["tomni",
-  "numpy",
-  "scikit-image"]);
+  const startPackages = ref(["tomni", "numpy", "scikit-image"]);
   const packageNames = ref([]);
   const licenses = ref([]);
-  const totalSizeBytes = ref(-1);
+  const totalSizeBytes = ref(0);
   const isLoading = ref(false);
 
   async function _fetchResults() {
     // Fetching new data
     const response = await axios
-      .post("https://python-dep-graph.herokuapp.com/getPackagesInfo", startPackages.value)
+      .post(
+        "https://python-dep-graph.herokuapp.com/getPackagesInfo",
+        startPackages.value
+      )
       .catch((e) => {
         const Error =
           e.response.data.Error || "The experiment could not be found";
@@ -30,14 +31,14 @@ export const usePythonDepsStore = defineStore("pythonDepsStore", () => {
 
     const response = await _fetchResults();
 
-    const error = response.Error || null
-    
+    const error = response.Error || null;
+
     if (error) {
       isLoading.value = false;
       return;
     }
 
-    console.log(response)
+    console.log(response);
 
     packageNames.value = response.data.packageNames;
     licenses.value = response.data.licenses;
@@ -47,6 +48,7 @@ export const usePythonDepsStore = defineStore("pythonDepsStore", () => {
   }
 
   return {
+    startPackages,
     isLoading,
     packageNames,
     licenses,
