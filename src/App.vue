@@ -8,7 +8,7 @@ import ShowResults from "./components/showResults.vue"
 
 <template>
   <div class='flex-col justify-center w-full'>
-    <h1 class="text-6xl flex justify-center text-center m-4">Python Project Analyser</h1>
+    <h1 class="text-6xl flex justify-center text-center m-4">Python Project Insight</h1>
     <div class="w-full flex justify-center">
       <p class="md:w-3/4 w-full m-4">
         This project has a total of 5000 python packages connected to each other based on dependencies.

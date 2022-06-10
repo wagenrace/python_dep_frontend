@@ -4,7 +4,7 @@ import { ref } from "vue";
 
 export const usePythonDepsStore = defineStore("pythonDepsStore", () => {
   // State
-  const startPackages = ref(["tomni", "numpy", "scikit-image"]);
+  const startPackages = ref([]);
   const packageNames = ref([]);
   const licenses = ref([]);
   const totalSizeBytes = ref(0);

@@ -11,6 +11,7 @@ function addPackage(e) {
         return
     }
     startPackages.value.push(newPackageName.value);
+    newPackageName.value = ""
 }
 </script>
 
