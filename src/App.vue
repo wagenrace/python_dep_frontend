@@ -1,7 +1,8 @@
 <script setup>
 import { storeToRefs } from "pinia";
 import { usePythonDepsStore } from './stores/pythonDepStore';
-
+import SelectedPackages from './components/selectedPackages.vue'
+import AddPackage from "./components/addPackage.vue";
 const store = usePythonDepsStore();
 const { isLoading,
   packageNames,
@@ -16,7 +17,9 @@ loadDeps()
   <p>
     isLoading {{ isLoading }}
   </p>
-  <p>
+  <AddPackage />
+  <SelectedPackages />
+  <!-- <p>
     Packages {{ packageNames }}
   </p>
   <p>
@@ -24,5 +27,5 @@ loadDeps()
   </p>
   <p>
     totalSizeBytes {{ totalSizeBytes }}
-  </p>
+  </p> -->
 </template>
