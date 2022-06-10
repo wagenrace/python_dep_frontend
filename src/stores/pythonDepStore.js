@@ -7,7 +7,7 @@ export const usePythonDepsStore = defineStore("pythonDepsStore", () => {
   const startPackages = ref(["tomni", "numpy", "scikit-image"]);
   const packageNames = ref([]);
   const licenses = ref([]);
-  const totalSizeBytes = ref(-1);
+  const totalSizeBytes = ref(0);
   const isLoading = ref(false);
 
   async function _fetchResults() {

@@ -1,34 +1,17 @@
 <script setup>
-import { storeToRefs } from "pinia";
-import { usePythonDepsStore } from './stores/pythonDepStore';
 import SelectedPackages from './components/selectedPackages.vue'
 import AddPackage from "./components/addPackage.vue";
 import LoadDeps from "./components/loadDeps.vue";
-
-const store = usePythonDepsStore();
-const { isLoading,
-  packageNames,
-  licenses,
-  totalSizeBytes
-} = storeToRefs(store);
-const { loadDeps } = store
+import ShowResults from "./components/showResults.vue"
 
 </script>
 
 <template>
-  <p>
-    isLoading {{ isLoading }}
-  </p>
+  <div class='flex-col justify-center w-ful'>
+    <h1 class="text-6xl flex justify-center text-center">Python Project Analyser</h1>
   <AddPackage />
   <SelectedPackages />
   <LoadDeps/>
-  <!-- <p>
-    Packages {{ packageNames }}
-  </p>
-  <p>
-    licenses {{ licenses }}
-  </p>
-  <p>
-    totalSizeBytes {{ totalSizeBytes }}
-  </p> -->
+  <ShowResults />
+  </div>
 </template>
