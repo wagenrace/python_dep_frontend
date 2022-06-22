@@ -50,7 +50,10 @@ const sortStrings = function (a, b) {
             <div class="flex justify-center w-full">
 
                 <div class="bg-white shadow-xl rounded-lg w-full">
-                    <h2 class="text-4xl flex justify-center">Needed licenses</h2>
+                    <div class="grid grid-cols-2">
+                        <h2 class="text-4xl flex justify-center">Needed licenses</h2>
+                        <h2 class="text-4xl flex justify-center">All packages</h2>
+                    </div>
                     <ul class="divide-y divide-gray-300">
                         <li v-for="license in licenses.sort(sortStrings)" :key="license.licenses"
                             class="p-4 hover:bg-gray-200 text-2xl grid grid-cols-2 w-full">
