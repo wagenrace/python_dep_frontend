@@ -55,7 +55,7 @@ const sortStrings = function (a, b) {
                         <li v-for="license in licenses.sort(sortStrings)" :key="license.licenses"
                             class="p-4 hover:bg-gray-200 text-2xl grid grid-cols-2 w-full">
                             <div class="">
-                                {{ license.licenses}}: {{license.totalSizeBytes }}
+                                {{ license.licenses }}
 
                             </div>
                             <div>
