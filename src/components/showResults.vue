@@ -26,6 +26,23 @@ const totalSizeText = computed(() => {
 const sortStrings = function (a, b) {
     const nameA = a.licenses.toUpperCase(); // ignore upper and lowercase
     const nameB = b.licenses.toUpperCase(); // ignore upper and lowercase
+    if(nameA == nameB) {
+        return 0;
+    }
+    if(nameA === "NOT FOUND"){
+        return -1;
+    }
+    if(nameB === "NOT FOUND"){
+        return 1
+    }
+
+    if(nameA === "UNKNOWN"){
+        return 1;
+    }
+    if(nameB === "UNKNOWN"){
+        return -1
+    }
+
     if (nameA < nameB) {
         return -1;
     }
