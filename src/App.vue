@@ -24,15 +24,13 @@ import ShowResults from "./components/showResults.vue"
     <ShowResults />
 
     <div class="w-full flex justify-center">
-      <div class="md:w-3/4 w-full m-4 flex justify-around">
-        <a href="https://github.com/wagenrace/python_dep_frontend"
-          class="w-1/5 bg-blue-600 text-white rounded-full text-center m-1 p-1 font-mono">Code front-end</a>
-        <a href="https://github.com/wagenrace/python_dep_graph"
-          class="w-1/5 bg-blue-600 text-white rounded-full text-center m-1 p-1 font-mono">Code back-end</a>
-        <a href="https://twitter.com/wagenrace"
-          class="w-1/5 bg-blue-600 text-white rounded-full text-center m-1 p-1 font-mono">Twitter</a>
-        <a href="https://www.linkedin.com/in/tom-nijhof-2a058893/"
-          class="w-1/5 bg-blue-600 text-white rounded-full text-center m-1 p-1 font-mono">LinkedIn</a>
+      <div class="md:w-3/4 w-full m-4 flex flex-col md:flex-row justify-around">
+        <a href="https://github.com/wagenrace/python_dep_frontend" class="button-primary">Code front-end</a>
+        <a href="https://github.com/wagenrace/python_dep_graph" class="button-primary">Code back-end</a>
+        <a href="https://medium.com/@nijhof.dns/python-packages-licenses-analysis-with-neo4j-c4269ae0ef14"
+          class="button-primary">Blog</a>
+        <a href="https://twitter.com/wagenrace" class="button-primary">Twitter</a>
+        <a href="https://www.linkedin.com/in/tom-nijhof-2a058893/" class="button-primary">LinkedIn</a>
       </div>
     </div>
   </div>
