@@ -22,7 +22,7 @@ function addPackage(e) {
                 <input type="text" placeholder="e.q. tensorflow, numpy, tomni, pandas" v-model="newPackageName"
                     class="border-2 w-3/4 px-4 py-2 rounded-md text-md text-gray-700 outline-none" />
                 <button
-                    class="w-1/4 mt-4 bg-gradient-to-tr from-blue-700 to-blue-900 text-white py-2 rounded-md text-lg font-semibold">
+                    class="w-1/4 mt-4 bg-gradient-to-tr from-blue-700 to-blue-900 hover:to-blue-400 text-white py-2 rounded-md text-lg font-semibold">
                     Add Package</button>
             </div>
         </form>
