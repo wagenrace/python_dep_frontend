@@ -10,16 +10,18 @@ import ShowResults from "./components/showResults.vue"
   <div class='flex-col justify-center w-full'>
     <h1 class="text-6xl flex justify-center text-center m-4">DEPRECATED Python Project Insight</h1>
     <div class="w-full flex justify-center">
-      <p class="md:w-3/4 w-full m-4">
-        This project used the free Heroku tier. This is no longer available, so I decided to deprecate the project.
-        The code is still available
-      </p>
-      <p class="md:w-3/4 w-full m-4">
-        This project has a total of 5300+ python packages connected to each other based on dependencies.
-        Together they from a graph in Neo4j.
-        Typing in all your packages will go through this graph to find out what is the total size of all packages, and
-        what are alle the licenses you need.
-      </p>
+      <div class="md:w-3/4 w-full m-4">
+        <p class="bg-red-200 text-red-900 rounded-xl p-2">
+          This project used the free Heroku tier. This is no longer available, so I decided to deprecate the project.
+          The code is still available
+        </p>
+        <p>
+          This project has a total of 5300+ python packages connected to each other based on dependencies.
+          Together they from a graph in Neo4j.
+          Typing in all your packages will go through this graph to find out what is the total size of all packages, and
+          what are alle the licenses you need.
+        </p>
+      </div>
     </div>
 
     <!-- 
