@@ -19,7 +19,12 @@ import ShowResults from "./components/showResults.vue"
 
 
         </p>
-        <p class="py-2 text-xl">Hosted by <a href="https://dot-asterisk.nl">Dot Asterisk</a></p>
+        <p class="py-2 text-xl">
+          Hosted by
+          <a class="text-blue-700 underline" href="https://dot-asterisk.nl">Dot
+            Asterisk
+          </a>
+        </p>
       </div>
     </div>
 
