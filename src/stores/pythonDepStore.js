@@ -14,7 +14,7 @@ export const usePythonDepsStore = defineStore("pythonDepsStore", () => {
     // Fetching new data
     const response = await axios
       .post(
-        "https://python-dep-graph.herokuapp.com/getPackagesInfoV2",
+        "https://wagenrace-dev.app.dot-asterisk.nl/getPackagesInfoV2/",
         startPackages.value
       )
       .catch((e) => {
@@ -41,7 +41,10 @@ export const usePythonDepsStore = defineStore("pythonDepsStore", () => {
     console.log(response);
 
     licenses.value = response.data;
-    totalSizeBytes.value = response.data.reduce((prev, cur) => prev + cur.totalSizeBytes, 0)
+    totalSizeBytes.value = response.data.reduce(
+      (prev, cur) => prev + cur.totalSizeBytes,
+      0
+    );
 
     isLoading.value = false;
   }
