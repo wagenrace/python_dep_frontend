@@ -16,7 +16,10 @@ import ShowResults from "./components/showResults.vue"
           Together they from a graph in Neo4j.
           Typing in all your packages will go through this graph to find out what is the total size of all packages, and
           what are alle the licenses you need.
+
+
         </p>
+        <p class="py-2 text-xl">Hosted by <a href="https://dot-asterisk.nl">Dot Asterisk</a></p>
       </div>
     </div>
 
