@@ -12,7 +12,7 @@ import ShowResults from "./components/showResults.vue"
     <div class="w-full flex justify-center">
       <div class="md:w-3/4 w-full m-4">
         <p>
-          This project has a total of 5300+ python packages connected to each other based on dependencies.
+          This project has a total of 400,000+ python packages connected to each other based on dependencies.
           Together they from a graph in Neo4j.
           Typing in all your packages will go through this graph to find out what is the total size of all packages, and
           what are alle the licenses you need.
